@@ -5,7 +5,7 @@ const suma = (a,b) =>{
      * Debes generar el código para que la función haga lo solicitado.
      */
     
-    
+    return a+b
 }
 
 const sonIguales = (x, y)=>{
@@ -13,7 +13,11 @@ const sonIguales = (x, y)=>{
     // De lo contrario, devuelve "false"
     // Debes generar el código para que la función haga lo solicitado.
 
-    
+    if (x === y){
+      return true
+    } else {
+      return false
+    }
 }
 
 function tienenMismaLongitud(str1, str2) {
@@ -32,7 +36,14 @@ function tienenMismaLongitud(str1, str2) {
      * Si el número es 0, devuelve false
      * Tu código:
      */
-  
+    
+    if (numero > 0){
+      return 'El numero es positivo'
+    } else if (numero < 0) {
+      return 'El numero es negativo'
+    } else {
+      return false
+    }
     
   }
 
@@ -44,7 +55,22 @@ function tienenMismaLongitud(str1, str2) {
     //En caso que el color recibido sea "orange", devuelve --> "This is orange"
     //Caso default: devuelve --> "Color not found"
     //Usar el statement Switch.
-    
+    switch (color){
+      case 'blue':
+        return 'This is blue'
+        break
+      case 'red':
+        return 'This is red'
+        break
+      case 'green':
+        return 'This is green'
+        break
+      case 'orange':
+        return 'This is orange'
+        break
+      default:
+        return 'Color not found'
+    }
   }
 
   const fizzBuzz = (numero)  => {
