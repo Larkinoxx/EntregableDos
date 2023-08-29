@@ -1,3 +1,4 @@
+// npm test en terminal para probar
 const suma = (a,b) =>{
     /**
      * a y b son los parámetros de entrada.
@@ -24,6 +25,12 @@ function tienenMismaLongitud(str1, str2) {
     // Devuelve "true" si las dos strings tienen la misma longitud
     // De lo contrario, devuelve "false"
     // Tu código:
+
+    if (str1.length === str2.length){
+      return true
+    } else {
+      return false
+    }
   }
 
   function esPositivo(numero) {
@@ -38,9 +45,9 @@ function tienenMismaLongitud(str1, str2) {
      */
     
     if (numero > 0){
-      return 'El numero es positivo'
+      return 'Es positivo'
     } else if (numero < 0) {
-      return 'El numero es negativo'
+      return 'Es negativo'
     } else {
       return false
     }
